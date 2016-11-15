@@ -183,8 +183,10 @@ document.addEventListener('keyup', (event) => {
     activeFigure.moveRight(cubeM);
   
   //елси нажата кнопка 'r'
-  if (event.key == 'r' || event.key == 'к')
+  if (event.key == 'r' || event.key == 'к') {
     activeFigure.turn();
+    activeFigure.calcCords();
+  }
 });
 
 document.addEventListener('keydown', (event) => {
