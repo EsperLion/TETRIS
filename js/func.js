@@ -173,19 +173,23 @@ function showGameOver() {
 
 // слушатели событий 
 document.addEventListener('keyup', function (event) {
-  console.log(event);
   //елси нажата стрелка влево
-  if (event.keyCode == 37)
+  if (event.keyCode == 37) {
     activeFigure.moveLeft(cubeM);
+    console.log('left')
+  }
   
   //елси нажата стрелка вправо
-  if (event.keyCode == 39) 
+  if (event.keyCode == 39) {
     activeFigure.moveRight(cubeM);
+    console.log('right')
+  }
   
   //елси нажата кнопка 'r'
   if (event.keyCode = 82) {
     activeFigure.turn();
     activeFigure.calcCords();
+    console.log('turn')
   }
 });
 
