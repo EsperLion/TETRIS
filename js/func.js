@@ -172,7 +172,7 @@ function showGameOver() {
 };
 
 // слушатели событий 
-document.addEventListener('keyup', (event) => {
+document.addEventListener('keyup', function (event) {
 
   //елси нажата стрелка влево
   if (event.key == 'ArrowLeft')
@@ -189,7 +189,7 @@ document.addEventListener('keyup', (event) => {
   }
 });
 
-document.addEventListener('keydown', (event) => {
+document.addEventListener('keydown', function (event) {
   // есди нажата стрелка вниз
   if (event.key == 'ArrowDown') {
     activeFigure.chekcCords();
