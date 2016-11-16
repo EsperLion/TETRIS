@@ -187,7 +187,7 @@ document.addEventListener('keyup', function (event) {
   }
   
   //елси нажата кнопка 'r'
-  if (event.keyCode = 82) {
+  if (event.keyCode == 82) {
     activeFigure.turn();
     activeFigure.calcCords();
     console.log('turn')
