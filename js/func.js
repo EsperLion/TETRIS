@@ -174,6 +174,7 @@ function showGameOver() {
 // слушатели событий 
 document.addEventListener('keyup', function (event) {
   //елси нажата стрелка влево
+  console.log(event.keyCode);
   if (event.keyCode == 37) {
     activeFigure.moveLeft(cubeM);
     console.log('left')
