@@ -175,15 +175,15 @@ function showGameOver() {
 document.addEventListener('keyup', function (event) {
   console.log(event);
   //елси нажата стрелка влево
-  if (event.key == 'ArrowLeft')
+  if (event.keyCode == 37)
     activeFigure.moveLeft(cubeM);
   
   //елси нажата стрелка вправо
-  if (event.key == 'ArrowRight') 
+  if (event.keyCode == 39) 
     activeFigure.moveRight(cubeM);
   
   //елси нажата кнопка 'r'
-  if (event.key == 'r' || event.key == 'к') {
+  if (event.keyCode = 82) {
     activeFigure.turn();
     activeFigure.calcCords();
   }
@@ -191,7 +191,7 @@ document.addEventListener('keyup', function (event) {
 
 document.addEventListener('keydown', function (event) {
   // есди нажата стрелка вниз
-  if (event.key == 'ArrowDown') {
+  if (event.keyCode == 40) {
     activeFigure.chekcCords();
     if (!activeFigure.checkGround(cubeM)) {
 
